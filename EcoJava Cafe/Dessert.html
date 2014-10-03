@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Desserts  |  EcoJava cafe</title>
+    <meta name="Author" content ="Anabell Chiu-Carag"/>
+    <meta name="Description" content="This page list all the dessert in EcoJava Cafe." />
+    <meta name="Keywords" content="crepe, ice cream, fruits, chocolate cake, cake, dessert, vancouver"/>
+    <script type="text/javascript" src="js/swfobject.js"></script>
+    <script type="text/javascript">
+        swfobject.embedSWF("myContent.swf", "flash", "300", "120", "9.0.0");
+    </script>
+</head>
+
+<body>
+    <header>
+        <div id="ecojavalogo" class="ecojavalogo">
+            <a href="index.html"><img src="images/ecojavalogo.jpg" height="200" width="140" alt="Ecojava Logo"></a>
+        </div><!--.ecojavalogo-->
+
+        <nav id="main-nav" class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menupage.html">Menu</a></li>
+                <li><a href="responsibility.html">Responsibility</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+            </ul>
+        </nav><!--.main-nav-->
+
+        <div id="social-links" class="social-links">
+            <ul>
+                <li><a href="http://twitter.com"><img src="images/twitter_large.png" width="32" height="32" alt="Twitter"></a></li>
+                <li><a href="http://facebook.com"><img src="images/facebook_large.png" width="32" height="32" alt="Facebook"></a></li>
+                <li><a href="http://pinterest.com"><img src="images/pinterest_large.png" width="32" height="32" alt="Pinterest"></a></li>
+            </ul>
+        </div><!--.social-links-->
+    </header>
+
+    <main>
+        <div id="dessert-nav" class="dessert-nav">
+            <div id="side-nav-title">
+                <h2>Dessert Menu</h2>
+            </div>
+            <div id="side-nav-content" class="side-nav-content">
+                <ul>
+                    <li><a href="#crepe">Crepe</a></li>
+                    <li><a href="#vanilla-ice-cream">Vanilla Ice Cream</a></li>
+                    <li><a href="#mixed-fruits">Mixed Fruits</a> </li>
+                    <li><a href="#choco_cake">Hot Chocolate Cake</a></li>
+                </ul>
+            </div>
+        </div> <!-- dessert_nav.dessert_nav -->
+        <div id="dessert_title" class="title">
+            <div class="intro-title">
+                <h1>Dessert</h1>
+            </div> <!-- intro-title -->
+            <hr />
+        </div> <!-- title -->
+        <form action="Order_Sent.html" method="post" enctype="multipart/form-data" >
+            <ul class="dessert_menu">
+                <li>
+                    <div id="crepe" class="dessert_item">
+                        <dl>
+                            <dt>
+                                <img src="images/crepe.jpg" alt="Crepe" height="300" width="300"/>
+                            </dt>
+                            <dd>
+                                <h2>Crepe</h2>
+                                <p>
+                                    Here is a delicious crepe that has all the fillings you love. Enjoy the delicious freshness of fruit slices on every chocolate drizzled crepe.
+                                    <strong>
+                                        <a href="Nutrition_Info.html">Nutritional information.</a>
+                                    </strong>
+                                </p>
+
+
+                                <label class="label-selection" for="filling">Choose Filling</label>
+                                <select name="filling" id="filling" >
+                                    <option value="Strawberry_Banana">Strawberry and Banana</option>
+                                    <option value="Mango_Peaches"> Mango and Peaches </option>
+                                    <option value="Clementine"> Clementine</option>
+                                    <option value="Blueberries">Blueberries</option>
+                                </select>
+                                <br>
+                                <p>Price:  $5.95</p>
+                                <p>
+                                    <label class="label-selection" for="qty-crepe">Quantity</label>
+                                    <input name="qty-crepe" id="qty-crepe" type="number" min="1" max="50" value="1">
+                                </p>
+                            </dd>
+                        </dl>
+                        <hr />
+                    </div> <!-- #dessert_item.crepe -->
+                </li>
+                <li>
+                    <div id="vanilla-ice-cream" class="dessert_item">
+                        <dl>
+                            <dt>
+                                <img src="images/vanilla-ice-cream.jpg" alt="Vanilla Ice Cream" height="300" width="300"/>
+                            </dt>
+                            <dd>
+                                <h2>Vanilla Ice Cream</h2>
+                                <p>Freshly churned vanilla ice cream swirled with freshly made syrup and topped with your favorite spinkles!
+                                    <strong>
+                                        <a href="Nutrition_Info.html">Nutritional information.</a>
+                                    </strong>
+                                <p>
+                                <label class="label-selection" for="syrup">Choose Syrup</label>
+                                <select name="syrup" id="syrup">
+                                    <option value="Strawberry">Strawberry</option>
+                                    <option value="Mango">Mango</option>
+                                    <option value="Chocolate">Chocolate</option>
+                                    <option value="Blueberry">Blueberry</option>
+                                </select>
+                                </p>
+                                <p>
+                                <label class="label-selection" for="sprinkles">Choose Sprinkles</label>
+                                <select name="sprinkles" id="sprinkles" >
+                                    <option value="none">none</option>
+                                    <option value="chocolate">Shaved Chocolate</option>
+                                    <option value="gummy">Gummies</option>
+                                    <option value="candy">Rainbow Rain</option>
+                                </select>
+                                </p>
+                                <p>Price:  $5.95</p>
+                                <p>
+                                    <label class="label-selection" for="qty-ice-cream">Quantity</label>
+                                    <input name="qty-ice-cream" id="qty-ice-cream" type="number" min="1" max="50" value="1" >
+                                </p>
+                            </dd>
+                        </dl>
+                        <hr />
+                    </div> <!-- #dessert_item.ice-cream -->
+                </li>
+
+                <li>
+                    <div id="mixed-fruits" class="dessert_item">
+                        <dl>
+                            <dt>
+                                <img src="images/mixed-fruits.jpg" alt="mixed-fruits" height="300" width="300"/>
+                            </dt>
+                            <dd>
+                                <h2>Mixed Fruits</h2>
+                                <p>A delectable fruit mix of your liking.  Cherries, strawberries, blueberries, raspberries, gooseberries, blackberries and, grapes.
+                                    <strong>
+                                        <a href="Nutrition_Info.html">Nutritional information.</a>
+                                    </strong>
+                                </p>
+                                <p>
+                                    <label class="label-selection" for="fruits">Choose Sprinkles</label>
+                                    <select name="fruits" id="fruits" multiple="multiple" size="4">
+                                        <option value="Cherries">Cherries</option>
+                                        <option value="Strawberries">Strawberries</option>
+                                        <option value="Blueberries">Blueberries</option>
+                                        <option value="Raspberries">Raspberries</option>
+                                        <option value="Gooseberries">Gooseberries</option>
+                                        <option value="Blackberries">Blackberries</option>
+                                        <option value="Grapes">Grapes</option>
+                                    </select>
+                                </p>
+                                <p>Price:  $5.95</p>
+                                <p>
+                                    <label class="label-selection" for="qty-fruits">Quantity</label>
+                                    <input name="qty-fruits" id="qty-fruits" type="number" min="1" max="50" value="1" >
+                                </p>
+                            </dd>
+                        </dl>
+                        <hr />
+                    </div> <!-- #dessert_item.mixed-fruits -->
+                </li>
+                <li>
+                    <div id="choco_cake" class="dessert_item">
+                        <dl>
+                            <dt>
+                                <img src="images/Hot-Chocolate-Cake.jpg" alt="Hot Chocolate Cake" height="300" width="300"/>
+                            </dt>
+                            <dd>
+                                <h2>Hot Chocolate Cake</h2>
+                                <p>Warm yourself with the smell and taste of our very own hot chocolate cake.  Spiced with the delicacy of happiness.
+                                    <strong>
+                                        <a href="Nutrition_Info.html">Nutritional information.</a>
+                                    </strong>
+                                </p>
+                                <p>Price:  $5.95</p>
+                                <p>
+                                    <label class="label-selection" for="qty-cake">Quantity</label>
+                                    <input name="qty-cake" id="qty-cake" type="number" min="1" max="50" value="1" >
+                                </p>
+                            </dd>
+                        </dl>
+                        <hr />
+                    </div> <!-- #dessert_item.choco_cake -->
+                </li>
+            </ul>
+        <input type="submit" name="submit" value="Submit Order!"/>
+         </form>
+        <div class="email" id="email">
+            <address>
+                <p>
+                    For comments, write to: <a href="mailto:anabellchan@my.bcit.ca">anabellchan@my.bcit.ca</a>
+                </p>
+            </address>
+        </div>
+        <p class="citation">
+            This page includes pictures or texts from Pinterest, Allrecipes, Starbucks, googled images and texts."
+        </p>
+
+    </main>
+
+    <footer>
+        <aside id="certification-bar" class="certification-bar">
+            <div class="fairtrade_cert">
+                <h3><a href="http://fairtrade.ca">Fairtrade Certified</a></h3>
+                <img src="images/fair-trade-logo1a.jpg" width="80" height="95" alt="Fairtrade Certified Logo">
+            </div><!--.fairtrade_cert-->
+            <div class="organic_cert">
+                <h3><a href="http://qai-inc.com">Organic Certified</a></h3>
+                <img src="images/organic-certifieda.jpg" width="93" height="95" alt="Organic Certified Logo">
+            </div><!--.organic_cert-->
+            <div class="b_corp_cert">
+                <h3><a href="http://bcorporation.net">B Corporation Certified</a></h3>
+                <img src="images/B-corporationa.jpg" width="66" height="95" alt="B Corporation Certified Logo">
+            </div><!--.b_corp_cert-->
+            <div class="climatesmart_cert">
+                <h3><a href="http://climatesmartbusiness.com">Climatesmart Certified</a></h3>
+                <img src="images/clmate_smart_logoa.jpg" width="216" height="90" alt="Climatesmart Certified Logo">
+            </div><!--.climatesmart_cert-->
+            <div class="kosher_cert">
+                <h3><a href="http://bckosher.org">Kosher Certified</a></h3>
+                <img src="images/kosher-certificationa.jpg" width="63" height="95" alt="Kosher Certified Logo">
+            </div><!--.kosher_cert-->
+        </aside><!--certification-bar-->
+
+        <nav id="footer-nav" class="footer-nav">
+            <div id="footer-menu" class="footer-menu">
+                <h3><a href="menupage.html">Menu</a></h3>
+                <ul>
+                    <li><a href="beverages.html">Beverages</a></li>
+                    <li><a href="bakedgoods.html">Baked Goods</a></li>
+                    <li><a href="sandwich.html">Sandwiches</a></li>
+                    <li><a href="dessert.html">Desserts</a></li>
+                    <li><a href="coffeebeans.html">Coffee Beans</a></li>
+                </ul>
+            </div><!--footer-menu-->
+            <div id="footer-moreinfo" class="footer-moreinfo">
+                <h3>More Information</h3>
+                <ul>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="responsibility.html">Responsibility</a></li>
+                </ul>
+            </div><!--footer-moreinfo-->
+            <div id="footer-location" class="footer-location">
+                <h3><a href="https://goo.gl/maps/3gMak">Ecojava Cafe Location</a></h3>
+                <p>
+                    1011 Hamilton Street<br />
+                    Vancouver, BC  V6B 5T4 <br />
+                    Canada
+                </p>
+            </div><!--footer-location-->
+        </nav><!--footer-nav-->
+
+        <div id="copyright" class="copyright">
+            <p>
+                &#64; 2014 Ecojava Cafe Limited. All Rights Reserved.
+            </p>
+        </div><!--.copyright-->
+    </footer>
+    <p class="citation">
+        This page may include copyrighted pictures or texts from Pinterest, Allrecipes, Starbucks, googled images and texts.
+    </p>
+</body>
+</html>
