@@ -1,0 +1,27 @@
+
+body {
+
+    background-image: url(jesse_css_images/coffeeshopmain.jpg);
+    background-size: 100%;
+    background-position: center;
+    border: 5px solid black;
+    width: 80%;
+    max-width: 80%;
+    background-attachment: fixed;
+    margin:auto;
+
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    margin:auto;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+}
