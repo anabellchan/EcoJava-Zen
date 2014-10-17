@@ -8,7 +8,7 @@
     <meta name="keywords" content="coffee, cafe, java, ecojava, vancouver">
 </head>
 
-<body>
+<body class="sandwich">
 <header>
     <div id="ecojavalogo" class="ecojavalogo">
         <a href="index.html"><img src="images/ecojavalogo.jpg" height="200" width="140" alt="Ecojava Logo"></a>
@@ -33,123 +33,139 @@
     </div><!--.social-links-->
 </header>
 
+<main>
+    <div id="nav" class="nav">
+        <div id="side-nav-title">
+            <h2>Sandwich Menu</h2>
+        </div>
+        <div id="side-nav-content" class="side-nav-content">
+            <ul>
+                <li><a href="#TunaBacon">Tuna & Bacon</a></li>
+                <li><a href="#CheeseHam">Cheese & Ham</a></li>
+                <li><a href="#sandwiches1">Sandwiches</a> </li>
+            </ul>
+        </div>
+    </div> <!-- dessert_nav.dessert_nav -->
+    <div id="sandwich_title" class="title">
+        <div class="intro-title">
+            <h1>Sandwiches</h1>
+        </div> <!-- intro-title -->
+    </div> <!-- title -->
 
-<h1>Sandwiches</h1>
+    <form action="Order_Sent.html" method="post" enctype="multipart/form-data" >
+    <ul class="menu">
+        <li>
+            <div id="sandwich" class="item">
+                <dl>
+                    <dt>
+                        <img src="images/sandwich1.jpg" alt="Tuna & Bacon"  width="300" height="300" />
+                    </dt>
+                    <dd>
+                        <h2>No.1 Tuna & Bacon</h2>
+                        <p>Mouth-watering. freshly prepared and roasted to perfection. Meet your new favourite sandwich</p>
+                        <UL>
+                            <li>
+                                Crispy bacon strips
+                            </li>
+                            <li>
+                                Tuna
+                            </li>
+                            <li>
+                                fresh lettuce
+                            </li>
+                            <li>
+                                light mayonnaise
+                            </li>
+                        </UL>
+                        <label for="favbread">Favorite Bread</label>
+                        <select name="favbread" id="favbread"
+                                multiple="multiple">
+                            <option value="white">White</option>
+                            <option value="rye">Rye</option>
+                            <option value="wwheat">Whole Wheat</option>
+                        </select>
+                        <p>Price:  $8.95</p>
+
+                        <label for="TunaBaconqty">Quantity</label>
+                        <input type="number" name="Tuna & Bacon qty" id="TunaBaconqty"
+                               required="required"
+                               min="1" max="10" value="1"/>
+
+                    </dd>
+                    <dt>
+                        <img src="images/sandwich2.jpg" alt="Cheese and Ham"  width="300" height="300" />
+                    </dt>
+                    <dd>
+                        <h2>Cheese & Ham</h2>
+                        <p>Our Cheese Ham Sandwich is made fresh to order with classic home-style ingredients</p>
+                        <UL>
+                            <li>
+                                Ham
+                            </li>
+                            <li>
+                                Brockin and lettuce
+                            </li>
+                            <li>
+                                Swiss cheese
+                            </li>
+                            <li>
+                                light mayonnaise
+                            </li>
+                        </UL>
+                        <label for="favbread1">Favorite Bread</label>
+                        <select name="favbread" id="favbread1" multiple="multiple">
+                            <option value="white">White</option>
+                            <option value="rye">Rye</option>
+                            <option value="wheat">Whole Wheat</option>
+                        </select>
+                        <p>Price:  $8.95</p>
+                        <label for="CheeseHamqty">Quantity</label>
+                        <input type="number" name="Cheese and Ham qty" id="CheeseHamqty"
+                               required="required"
+                               min="1" max="10" value="1"/>
+                    </dd>
+                    <dt>
+                        <img src="images/sandwich3.jpg" alt="sandwiches"   width="300" height="300"  />
+                    </dt>
+                    <dd>
+                        <h2>Roast Turkey</h2>
+                        <p>Now this is what a sandwich should be- freshly baked bread, quality toppings and prepared on the spot delicious</p>
+                        <UL>
+                            <li>
+                                Smoked turkey
+                            </li>
+                            <li>
+                                Crispy bacon
+                            </li>
+                            <li>
+                                lettuce, tomato and onion
+                            </li>
+                            <li>
+                                honey mustard sauce
+                            </li>
+                        </UL>
+                        <p>
+                            <label for="favbread2">Favorite Bread</label>
+                            <select name="favbread" id="favbread2" multiple="multiple">
+                                <option value="white">White</option>
+                                <option value="rye">Rye</option>
+                                <option value="wheat">Whole Wheat</option>
+                            </select>
+                        </p>
+                        <label for="sandwichesqty">Quantity</label>
+                        <input type="number" name="Cheese and Ham qty" id="sandwichesqty"
+                               required="required"
+                               min="1" max="10"  value="1" />
+
+                    </dd>
+                </dl>
+            </div>
+        </li>
+    </ul>
+    <input type="submit" name="submit" value="Submit Order!"/>
+    </form>
 <hr>
-<div id="TunaBacon" class="logo">
-    <img src="images/sandwich1.jpg" alt="Tuna & Bacon"  width="300" height="300" />
-</div><!-- .logo -->
-<h3>No.1 Tuna & Bacon   $7.99    
-    <label for="TunaBaconqty">Quantity</label>
-    <input type="number" name="Tuna & Bacon qty" id="TunaBaconqty"
-           required="required"
-           min="1" max="10" value="1"/>
-                      
-     <input type="checkbox" name="order" id="TunaBacon1" value="Tuna & Bacon" >
-     <label for="TunaBacon1">Order</label></h3>
-     <h4>Mouth-watering. freshly prepared and roasted to perfection. Meet your new favourite sandwich</h4>
- <UL>
-    <li>
-        Crispy bacon strips
-    </li>
-    <li>
-        Tuna
-    </li>
-    <li>
-       fresh lettuce
-    </li>
-    <li>
-        light mayonnaise
-    </li>
-</UL>
-<p>
-    <label for="favbread">Favorite Bread</label>
-    <select name="favbread" id="favbread"
-            multiple="multiple">
-        <option value="white">White</option>
-        <option value="rye">Rye</option>
-        <option value="wwheat">Whole Wheat</option>
-    </select>
-</p>
-<hr>
-<div id="CheeseHam" class="logo">
-    <img src="images/sandwich2.jpg" alt="Cheese and Ham"  width="300" height="300" />
-</div><!-- .logo -->
-<h3>No.2 Cheese and Ham              $6.99              
-    <label for="CheeseHamqty">Quantity</label>
-    <input type="number" name="Cheese and Ham qty" id="CheeseHamqty"
-           required="required"
-           min="1" max="10" value="1"/>
-                                                                             
-    <input type="checkbox" name="order" id="CheeseHam1"
-           value="Cheese and Ham" >
-    <label for="CheeseHam1">Order</label>
-
-</h3>
-<h4>Our Cheese Ham Sandwich is made fresh to order with classic home-style ingredients</h4>
- <UL>
-    <li>
-        Ham
-    </li>
-    <li>
-        Brockin and lettuce
-    </li>
-     <li>
-         Swiss cheese
-     </li>
-    <li>
-        light mayonnaise
-    </li>
-</UL>
-<p>
-    <label for="favbread1">Favorite Bread</label>
-    <select name="favbread" id="favbread1" multiple="multiple">
-        <option value="white">White</option>
-        <option value="rye">Rye</option>
-        <option value="wheat">Whole Wheat</option>
-    </select>
-</p>
-<hr>
-<div id="sandwiches1" class="logo">
-    <img src="images/sandwich3.jpg" alt="sandwiches"   width="300" height="300"  />
-</div><!-- .logo -->
-<h3>No.3 sandwiches             $8.99               
-    <label for="sandwichesqty">Quantity</label>
-    <input type="number" name="Cheese and Ham qty" id="sandwichesqty"
-           required="required"
-           min="1" max="10"  value="1" />
-                      
-
-<input type="checkbox" name="order" id="sandwiches"
-       value="sandwiches" >
-    <label for="sandwiches">Order</label> </h3>
-<h4>Now this is what a sandwich should be- freshly baked bread, quality toppings and prepared on the spot delicious</h4>
-
-<UL>
-    <li>
-        Smoked turkey
-    </li>
-    <li>
-       Crispy bacon
-    </li>
-    <li>
-        lettuce, tomato and onion
-    </li>
-    <li>
-        honey mustard sauce
-    </li>
-</UL>
-<p>
-    <label for="favbread2">Favorite Bread</label>
-    <select name="favbread" id="favbread2" multiple="multiple">
-        <option value="white">White</option>
-        <option value="rye">Rye</option>
-        <option value="wheat">Whole Wheat</option>
-    </select>
-</p>
-<input type="submit" name="submit" value="Submit">
-<hr>
-
+</main>
 <footer>
     <aside id="certification-bar" class="certification-bar">
         <div class="fairtrade_cert">

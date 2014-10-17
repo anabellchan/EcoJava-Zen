@@ -11,8 +11,7 @@
         swfobject.embedSWF("myContent.swf", "flash", "300", "120", "9.0.0");
     </script>
 </head>
-
-<body>
+<body class="dessert">
     <header>
         <div id="ecojavalogo" class="ecojavalogo">
             <a href="index.html"><img src="images/ecojavalogo.jpg" height="200" width="140" alt="Ecojava Logo"></a>
@@ -36,9 +35,8 @@
             </ul>
         </div><!--.social-links-->
     </header>
-
     <main>
-        <div id="dessert-nav" class="dessert-nav">
+        <div id="side-nav-content" class="side-nav-content">
             <div id="side-nav-title">
                 <h2>Dessert Menu</h2>
             </div>
@@ -57,9 +55,9 @@
             </div> <!-- intro-title -->
         </div> <!-- title -->
         <form action="Order_Sent.html" method="post" enctype="multipart/form-data" >
-            <ul class="dessert_menu">
+            <ul class="menu">
                 <li>
-                    <div id="crepe" class="dessert_item">
+                    <div id="crepe" class="item">
                         <dl>
                             <dt>
                                 <img src="images/crepe.jpg" alt="Crepe" height="300" width="300"/>
@@ -69,45 +67,6 @@
                                 <p>
                                     Here is a delicious crepe that has all the fillings you love. Enjoy the delicious freshness of fruit slices on every chocolate drizzled crepe.
                                 </p>
-                                <table border="1" class="nutrition">
-                                    <caption>Nutritional Facts</caption>
-                                    <thead>
-                                    <tr>
-                                        <th colspan="3"><small>Serving size 66g</small></th>
-                                    </tr>
-                                    <tr>
-                                        <th colspan="3"><small>% Daily Value</small></th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>Total Fat</td>
-                                        <td>7g</td>
-                                        <td>11%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Cholesterol</td>
-                                        <td>29mg</td>
-                                        <td>10%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Sodium</td>
-                                        <td>53mg</td>
-                                        <td>2%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Total Carbohydrate</td>
-                                        <td>16g</td>
-                                        <td>5%</td>
-                                    </tr>
-                                    <tr>
-                                        <td >Protein</td>
-                                        <td colspan="2">2g</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-
-
                                 <label class="label-selection" for="filling">Choose Filling</label>
                                 <select name="filling" id="filling" >
                                     <option value="Strawberry_Banana">Strawberry and Banana</option>
@@ -329,14 +288,7 @@
                 </li>
             </ul>
         <input type="submit" name="submit" value="Submit Order!"/>
-         </form>
-        <div class="email" id="email">
-            <address>
-                <p>
-                    For comments, write to: <a href="mailto:anabellchan@my.bcit.ca">anabellchan@my.bcit.ca</a>
-                </p>
-            </address>
-        </div>
+        </form>
         <p class="citation">
             This page includes pictures or texts from Pinterest, Allrecipes, Starbucks, googled images and texts.
         </p>
@@ -345,7 +297,6 @@
         </div>
 
     </main>
-
     <footer>
         <aside id="certification-bar" class="certification-bar">
             <div class="fairtrade_cert">
