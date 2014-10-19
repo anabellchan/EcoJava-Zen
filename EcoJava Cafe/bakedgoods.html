@@ -3,366 +3,255 @@
 <head>
     <meta charset="utf-8">
     <title>Ecojava Cafe Baked Goods</title>
-    <meta name="author" content="Stephen Leong">
+    <meta name="author" content="">
     <meta name="description" content="This page lists all of the baked good items offered by Ecojava Cafe">
     <meta name="keywords" content="baked goods, scones, muffins, cookies, bars, cafe, java, ecojava, vancouver">
     <!--if lt IE 9-->
-     <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <link href="" rel="stylesheet" />
     <!--endif-->
 </head>
 
 <body>
-    <header>
-        <div id="ecojavalogo" class="ecojavalogo">
-            <a href="index.html"><img src="images/ecojavalogo.jpg" height="200" width="140" alt="Ecojava Logo"></a>
-        </div><!--.ecojavalogo-->
+<header>
+    <div id="ecojavalogo" class="ecojavalogo">
+        <a href="index.html"><img src="images/ecojavalogo.jpg" height="200" width="140" alt="Ecojava Logo"></a>
+    </div><!--.ecojavalogo-->
 
-        <nav id="main-nav" class="main-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menupage.html">Menu</a></li>
-                <li><a href="responsibility.html">Responsibility</a></li>
-                <li><a href="aboutus.html">About us</a></li>
-                <li><a href="contactus.html">Contact us</a></li>
-            </ul>
-        </nav><!--.main-nav-->
+    <nav id="main-nav" class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menupage.html">Menu</a></li>
+            <li><a href="responsibility.html">Responsibility</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+        </ul>
+    </nav><!--.main-nav-->
 
-        <div id="social-links" class="social-links">
-            <ul>
-                <li><a href="http://twitter.com"><img src="images/twitter_large.png" width="32" height="32" alt="Twitter"></a></li>
-                <li><a href="http://facebook.com"><img src="images/facebook_large.png" width="32" height="32" alt="Facebook"></a></li>
-                <li><a href="http://pinterest.com"><img src="images/pinterest_large.png" width="32" height="32" alt="Pinterest"></a></li>
-            </ul>
-        </div><!--.social-links-->
-    </header>
+    <div id="social-links" class="social-links">
+        <ul>
+            <li><a href="http://twitter.com"><img src="images/twitter_large.png" width="32" height="32" alt="Twitter"></a></li>
+            <li><a href="http://facebook.com"><img src="images/facebook_large.png" width="32" height="32" alt="Facebook"></a></li>
+            <li><a href="http://pinterest.com"><img src="images/pinterest_large.png" width="32" height="32" alt="Pinterest"></a></li>
+        </ul>
+    </div><!--.social-links-->
+</header>
 
 <main>
-        <div id="side-nav" class="dessert-nav">
+    <div id="side-nav" class="dessert-nav">
         <div id="side-nav-title">
-        <h2>Dessert Menu</h2>
+            <h2>Baked Goods Menu</h2>
         </div>
-            <div id="side-nav-content" class="side-nav-content">
-        <ul>
-            <li><a href="#scone">Crepe</a></li>
-            <li><a href="#vanilla-ice-cream">Vanilla Ice Cream</a></li>
-            <li><a href="#mixed-fruits">Mixed Fruits</a> </li>
-            <li><a href="#choco_cake">Hot Chocolate Cake</a></li>
+        <div id="side-nav-content" class="side-nav-content">
+            <ul>
+                <li><a href="#scone">Scones</a></li>
+                <li><a href="#muffin">Muffins</a></li>
+                <li><a href="#cookie">Cookies</a> </li>
+                <li><a href="#bar">Bars</a></li>
+            </ul>
+        </div>
+        <div id="baked-goods_title" class="title">
+            <div class="intro-title">
+                <h1>Baked Goods</h1>
+            </div> <!-- intro-title -->
+            <hr />
+        </div> <!-- title -->
+    </div>
+
+    <form action="Order_Sent.html" method="post" enctype="multipart/form-data" >
+        <ul class="menu">
+            <li>
+                <div id="scone" class="item">
+                    <dl>
+                        <dt>
+                            <img src="images/scones2.jpg" width="300" height="300" alt="Scones"/>
+                        </dt>
+                        <dd>
+                            <h2>Scones</h2>
+                            <p>Our Gluten-Free Scones are made with all-natural ingredients and have a delicate, crumbly
+                                texture with just a touch of sweetness. And with over a half dozen varieties, there's a
+                                flavor for every taste.</p>
+                            <label for="scone-flavours">Flavours</label>
+                            <select name="scone-flavours" id="scone-flavours">
+                                <option value="Blueberry">Blueberry</option>
+                                <option value="Cranberry">Cranberry</option>
+                                <option value="Lemon">Lemon</option>
+                                <option value="White Chocolate">White Chocolate</option>
+                                <option value="Cherry Lemon Current">Cherry Lemon Current</option>
+                                <option value="Chocolate Pumpkin">Chocolate Pumpkin</option>
+                                <option value="Butterscotch Maple">Butterscotch Maple</option>
+                            </select>
+                            <br>
+                            <p>Price:  $5.95</p>
+                            <p>
+                                <label class="label-selection" for="qty-scone">Quantity</label>
+                                <input name="qty-scone" id="qty-scone" type="number" min="1" max="50" value="1">
+                            </p>
+                        </dd>
+                    </dl>
+                    <hr />
+                </div>
+            </li>
+            <!-- #item.scone -->
+            <li>
+                <div id="muffin" class="item">
+                    <dl>
+                        <dt>
+                            <img src="images/muffins2.jpg" width="300" height="300" alt="Muffins"/>
+                        </dt>
+                        <dd>
+                            <h2>Muffins</h2>
+                            <p>Our healthy muffins are made with ingredients such as unsweetened applesauce, unsweetened
+                                almond milk, agave nectar and very little sugar or oil.<p>
+                            <label for="muffin-flavours">Flavours</label>
+                            <select name="muffin-flavours" id="muffin-flavours">
+                                <option value="Coconut Pineapple">Coconut Pineapple</option>
+                                <option value="Morning Glory">Morning Glory</option>
+                                <option value="Lemon Blueberry">Lemon Blueberry</option>
+                                <option value="Cranberry Orange">Cranberry Orange</option>
+                                <option value="Banana Chocolate Chip">Banana Chocolate Chip</option>
+                                <option value="Mixed Berry">Mixed Berry</option>
+                            </select>
+                            <p>Price:  $5.95</p>
+                            <p>
+                                <label class="label-selection" for="qty-muffins">Quantity</label>
+                                <input name="qty-muffins" id="qty-muffins" type="number" min="1" max="50" value="1" >
+                            </p>
+                        </dd>
+                    </dl>
+                    <hr />
+                </div> <!-- #item.muffin -->
+            </li>
+
+            <li>
+                <div id="cookie" class="item">
+                    <dl>
+                        <dt>
+                            <img src="images/cookie2.jpg" width="300" height="300" alt="Cookies"/>
+                        </dt>
+                        <dd>
+                            <h2>Cookies</h2>
+                            <p>High-quality ingredients, eye-catching designs and innovative flavour combinations are
+                                just part of what make our cookies stand out.</p>
+                            <br>
+                            <p>Price:  $5.95</p>
+                            <p>
+                                <label for="cookie-flavours">Flavours</label>
+                                <select name="cookie-flavours" id="cookie-flavours">
+                                    <option value="Chocolate Sandwich">Chocolate Sandwich</option>
+                                    <option value="Peanut Butter Sandwich">Peanut Butter Sandwich</option>
+                                    <option value="Milk Chocolate Chip">Milk Chocolate Chip</option>
+                                    <option value="Big Soft Sugar">Big Soft Sugar</option>
+                                    <option value="Gingersnap">Gingersnap</option>
+                                    <option value="Snickerdoodle">Snickerdoodle</option>
+                                    <option value="Red Velvet">Red Velvet</option>
+                                    <option value="Oatmeal Cranberry">Oatmeal Cranberry</option>
+                                </select>
+                                <label class="label-selection" for="qty-cookie">Quantity</label>
+                                <input name="qty-cookie" id="qty-cookie" type="number" min="1" max="50" value="1">
+                            </p>
+                        </dd>
+                    </dl>
+                    <hr />
+                </div> <!-- #item.cookie -->
+            </li>
+
+            <li>
+                <div id="bar" class="item">
+                    <dl>
+                        <dt>
+                            <img src="images/brownie2.jpg" width="300" height="300" alt="Bars"/>
+                        </dt>
+                        <dd>
+                            <h2>Bars</h2>
+                            <p>Made in house using all organic wheat flour, oats, polenta, organic and fair trade
+                                sugar, cage free eggs - these bars are to die for.</p>
+                            <br>
+                            <p>Price:  $5.95</p>
+                            <p>
+                                <label for="bar-flavours">Flavours</label>
+                                <select name="bar-flavours" id="bar-flavours">
+                                    <option value="Brownie">Brownie</option>
+                                    <option value="Lemon Bar">Lemon Bar</option>
+                                    <option value="Pecan Bar">Pecan Bar</option>
+                                    <option value="Nanaimo Bar">Nanaimo Bar</option>
+                                    <option value="Butterscotch Crispy Bar">Butterscotch Crispy Bar</option>
+                                    <option value="Chocolate Cherry Bar">Chocolate Cherry Bar</option>
+                                </select>
+                                <label class="label-selection" for="qty-bar">Quantity</label>
+                                <input name="qty-bar" id="qty-bar" type="number" min="1" max="50" value="1">
+                            </p>
+                        </dd>
+                    </dl>
+                    <hr />
+                </div> <!-- #item.bar -->
+            </li>
         </ul>
-    </div>
-
-
-
-
-
-
-        <section id="items" class="items">
-        <form action="#" method="get" enctype="multipart/form-data">
-            <div id="scone-image" class="scone-image"><img src="images/scones2.jpg" width="300" height="300" alt="Scones"></div>
-            <h2>Scones</h2>
-            <p>Our Gluten-Free Scones are made with all-natural ingredients and have a delicate, crumbly texture with just a touch of sweetness. And with over a half dozen varieties, there's a flavor for every taste.</p>
-
-            <table id="scone-nutrition" class="scone-nutrition">
-                <caption>Nutritional Facts</caption>
-                <thead>
-                    <tr>
-                        <th colspan="3">Serving Size 172g</th>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <th>Grams</th>
-                        <th>% Daily Value</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Calories</td>
-                        <td>29g</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Total Fat</td>
-                        <td>29g</td>
-                        <td>44%</td>
-                    </tr>
-                    <tr>
-                        <td>Cholestrol</td>
-                        <td>73mg</td>
-                        <td>24%</td>
-                    </tr>
-                    <tr>
-                        <td>Sodium</td>
-                        <td>343mg</td>
-                        <td>14%</td>
-                    </tr>
-                </tbody>
-            </table>
-
-
-            <label for="scone-flavours">Flavours</label>
-            <select name="scone-flavours" id="scone-flavours" size="3" multiple="multiple">
-                <option value="Blueberry">Blueberry</option>
-                <option value="Cranberry">Cranberry</option>
-                <option value="Lemon">Lemon</option>
-                <option value="White Chocolate">White Chocolate</option>
-                <option value="Cherry Lemon Current">Cherry Lemon Current</option>
-                <option value="Chocolate Pumpkin">Chocolate Pumpkin</option>
-                <option value="Butterscotch Maple">Butterscotch Maple</option>
-            </select>
-
-            <label for="scone-qty">Quantity</label>
-            <input type="text" name="scone-qty" id="scone-qty"
-                   size="3" maxlength="5" placeholder="1" />
-
-            <label for="scone-order">Order</label>
-            <input type="checkbox" name="scone-order" id="scone-order"
-                   value="scone-order">
-            <hr />
-
-            <div id="muffin-image" class="muffin-image"><img src="images/muffins2.jpg" width="300" height="300" alt="Muffins"></div>
-            <h2>Muffins</h2>
-            <p>Our healthy muffins are made with ingredients such as unsweetened applesauce, unsweetened almond milk, agave nectar and very little sugar or oil.</p>
-
-            <table id="muffin-nutrition" class="muffin-nutrition">
-                <caption>Nutritional Facts</caption>
-                <thead>
-                    <tr>
-                        <th colspan="3">Serving Size 172g</th>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <th>Grams</th>
-                        <th>% Daily Value</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Calories</td>
-                        <td>29g</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Total Fat</td>
-                        <td>29g</td>
-                        <td>44%</td>
-                    </tr>
-                    <tr>
-                        <td>Cholestrol</td>
-                        <td>73mg</td>
-                        <td>24%</td>
-                    </tr>
-                    <tr>
-                        <td>Sodium</td>
-                        <td>343mg</td>
-                        <td>14%</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <label for="muffin-flavours">Flavours</label>
-            <select name="muffin-flavours" id="muffin-flavours" size="3" multiple="multiple">
-                <option value="Coconut Pineapple">Coconut Pineapple</option>
-                <option value="Morning Glory">Morning Glory</option>
-                <option value="Lemon Blueberry">Lemon Blueberry</option>
-                <option value="Cranberry Orange">Cranberry Orange</option>
-                <option value="Banana Chocolate Chip">Banana Chocolate Chip</option>
-                <option value="Mixed Berry">Mixed Berry</option>
-            </select>
-
-            <label for="muffin-qty">Quantity</label>
-            <input type="text" name="muffin-qty" id="muffin-qty"
-                   size="3" maxlength="5" placeholder="1" />
-
-            <label for="muffin-order">Order</label>
-            <input type="checkbox" name="muffin-order" id="muffin-order"
-                   value="muffin-order">
-            <hr />
-
-            <div id="cookie-image" class="cookie-image"><img src="images/cookie2.jpg" width="300" height="300" alt="Cookies"></div>
-            <h2>Cookies</h2>
-            <p>High-quality ingredients, eye-catching designs and innovative flavour combinations are just part of what make our cookies stand out.</p>
-
-            <table id="cookie-nutrition" class="cookie-nutrition">
-                <caption>Nutritional Facts</caption>
-                <thead>
-                    <tr>
-                        <th colspan="3">Serving Size 172g</th>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <th>Grams</th>
-                        <th>% Daily Value</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Calories</td>
-                        <td>29g</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Total Fat</td>
-                        <td>29g</td>
-                        <td>44%</td>
-                    </tr>
-                    <tr>
-                        <td>Cholestrol</td>
-                        <td>73mg</td>
-                        <td>24%</td>
-                    </tr>
-                    <tr>
-                        <td>Sodium</td>
-                        <td>343mg</td>
-                        <td>14%</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <label for="cookie-flavours">Flavours</label>
-            <select name="cookie-flavours" id="cookie-flavours" size="3" multiple="multiple">
-                <option value="Chocolate Sandwich">Chocolate Sandwich</option>
-                <option value="Peanut Butter Sandwich">Peanut Butter Sandwich</option>
-                <option value="Milk Chocolate Chip">Milk Chocolate Chip</option>
-                <option value="Big Soft Sugar">Big Soft Sugar</option>
-                <option value="Gingersnap">Gingersnap</option>
-                <option value="Snickerdoodle">Snickerdoodle</option>
-                <option value="Red Velvet">Red Velvet</option>
-                <option value="Oatmeal Cranberry">Oatmeal Cranberry</option>
-            </select>
-
-            <label for="cookie-qty">Quantity</label>
-            <input type="text" name="cookie-qty" id="cookie-qty"
-                   size="3" maxlength="5" placeholder="1" />
-
-            <label for="cookie-order">Order</label>
-            <input type="checkbox" name="cookie-order" id="cookie-order"
-                   value="cookie-order">
-            <hr />
-
-            <div id="bar-image" class="bar-image"><img src="images/brownie2.jpg" width="300" height="300" alt="Bars"></div>
-            <h2>Bars</h2>
-            <p>Made in house using all organic wheat flour, oats, polenta, organic and fair trade sugar, cage free eggs - these bars are to die for.</p>
-
-            <table id="bar-nutrition" class="bar-nutrition">
-                <caption>Nutritional Facts</caption>
-                <thead>
-                    <tr>
-                        <th colspan="3">Serving Size 172g</th>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <th>Grams</th>
-                        <th>% Daily Value</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Calories</td>
-                        <td>29g</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Total Fat</td>
-                        <td>29g</td>
-                        <td>44%</td>
-                    </tr>
-                    <tr>
-                        <td>Cholestrol</td>
-                        <td>73mg</td>
-                        <td>24%</td>
-                    </tr>
-                    <tr>
-                        <td>Sodium</td>
-                        <td>343mg</td>
-                        <td>14%</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <label for="bar-flavours">Flavours</label>
-            <select name="bar-flavours" id="bar-flavours" size="3" multiple="multiple">
-                <option value="Brownie">Brownie</option>
-                <option value="Lemon Bar">Lemon Bar</option>
-                <option value="Pecan Bar">Pecan Bar</option>
-                <option value="Nanaimo Bar">Nanaimo Bar</option>
-                <option value="Butterscotch Crispy Bar">Butterscotch Crispy Bar</option>
-                <option value="Chocolate Cherry Bar">Chocolate Cherry Bar</option>
-            </select>
-
-            <label for="bar-qty">Quantity</label>
-            <input type="text" name="bar-qty" id="bar-qty"
-                   size="3" maxlength="5" placeholder="1" />
-
-            <label for="bar-order">Order</label>
-            <input type="checkbox" name="bar-order" id="bar-order"
-                   value="bar-order">
-            <hr />
-
-            <input type="submit" name="submit" value="Submit Order">
-        </form>
-    </section><!--.items-->
-    <div id="back-to-top" class="back-to-top">
-        <p><a href="#top">Back to top of page</a></p>
-    </div>
+        <input type="submit" name="submit" value="Submit Order">
+    </form><!--.items-->
 </main>
 
-    <footer>
-        <aside id="certification-bar" class="certification-bar">
-            <div class="fairtrade_cert">
-                <h3><a href="http://fairtrade.ca">Fairtrade Certified</a></h3>
-                <img src="images/fair-trade-logo1a.jpg" width="80" height="95" alt="Fairtrade Certified Logo">
-            </div><!--.fairtrade_cert-->
-            <div class="organic_cert">
-                <h3><a href="http://qai-inc.com">Organic Certified</a></h3>
-                <img src="images/organic-certifieda.jpg" width="93" height="95" alt="Organic Certified Logo">
-            </div><!--.organic_cert-->
-            <div class="b_corp_cert">
-                <h3><a href="http://bcorporation.net">B Corporation Certified</a></h3>
-                <img src="images/B-corporationa.jpg" width="66" height="95" alt="B Corporation Certified Logo">
-            </div><!--.b_corp_cert-->
-            <div class="climatesmart_cert">
-                <h3><a href="http://climatesmartbusiness.com">Climatesmart Certified</a></h3>
-                <img src="images/clmate_smart_logoa.jpg" width="216" height="90" alt="Climatesmart Certified Logo">
-            </div><!--.climatesmart_cert-->
-            <div class="kosher_cert">
-                <h3><a href="http://bckosher.org">Kosher Certified</a></h3>
-                <img src="images/kosher-certificationa.jpg" width="63" height="95" alt="Kosher Certified Logo">
-            </div><!--.kosher_cert-->
-        </aside><!--certification-bar-->
+<footer>
+    <aside id="certification-bar" class="certification-bar">
+        <div class="fairtrade_cert">
+            <h3><a href="http://fairtrade.ca">Fairtrade Certified</a></h3>
+            <img src="images/fair-trade-logo1a.jpg" width="80" height="95" alt="Fairtrade Certified Logo">
+        </div><!--.fairtrade_cert-->
+        <div class="organic_cert">
+            <h3><a href="http://qai-inc.com">Organic Certified</a></h3>
+            <img src="images/organic-certifieda.jpg" width="93" height="95" alt="Organic Certified Logo">
+        </div><!--.organic_cert-->
+        <div class="b_corp_cert">
+            <h3><a href="http://bcorporation.net">B Corporation Certified</a></h3>
+            <img src="images/B-corporationa.jpg" width="66" height="95" alt="B Corporation Certified Logo">
+        </div><!--.b_corp_cert-->
+        <div class="climatesmart_cert">
+            <h3><a href="http://climatesmartbusiness.com">Climatesmart Certified</a></h3>
+            <img src="images/clmate_smart_logoa.jpg" width="216" height="90" alt="Climatesmart Certified Logo">
+        </div><!--.climatesmart_cert-->
+        <div class="kosher_cert">
+            <h3><a href="http://bckosher.org">Kosher Certified</a></h3>
+            <img src="images/kosher-certificationa.jpg" width="63" height="95" alt="Kosher Certified Logo">
+        </div><!--.kosher_cert-->
+    </aside><!--certification-bar-->
 
-        <nav id="footer-nav" class="footer-nav">
-            <div id="footer-menu" class="footer-menu">
-                <h3><a href="menupage.html">Menu</a></h3>
-                <ul>
-                    <li><a href="beverages.html">Beverages</a></li>
-                    <li><a href="bakedgoods.html">Baked Goods</a></li>
-                    <li><a href="sandwich.html">Sandwiches</a></li>
-                    <li><a href="dessert.html">Desserts</a></li>
-                    <li><a href="coffeebeans.html">Coffee Beans</a></li>
-                </ul>
-            </div><!--footer-menu-->
-            <div id="footer-moreinfo" class="footer-moreinfo">
-                <h3>More Information</h3>
-                <ul>
-                    <li><a href="aboutus.html">About Us</a></li>
-                    <li><a href="contactus.html">Contact Us</a></li>
-                    <li><a href="responsibility.html">Responsibility</a></li>
-                </ul>
-            </div><!--footer-moreinfo-->
-            <div id="footer-location" class="footer-location">
-                <h3><a href="https://goo.gl/maps/3gMak">Ecojava Cafe Location</a></h3>
-                <p>
-                    1011 Hamilton Street<br />
-                    Vancouver, BC  V6B 5T4 <br />
-                    Canada
-                </p>
-            </div><!--footer-location-->
-        </nav><!--footer-nav-->
-
-        <div id="copyright" class="copyright">
+    <nav id="footer-nav" class="footer-nav">
+        <div id="footer-menu" class="footer-menu">
+            <h3><a href="menupage.html">Menu</a></h3>
+            <ul>
+                <li><a href="beverages.html">Beverages</a></li>
+                <li><a href="bakedgoods.html">Baked Goods</a></li>
+                <li><a href="sandwich.html">Sandwiches</a></li>
+                <li><a href="dessert.html">Desserts</a></li>
+                <li><a href="coffeebeans.html">Coffee Beans</a></li>
+            </ul>
+        </div><!--footer-menu-->
+        <div id="footer-moreinfo" class="footer-moreinfo">
+            <h3>More Information</h3>
+            <ul>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="responsibility.html">Responsibility</a></li>
+            </ul>
+        </div><!--footer-moreinfo-->
+        <div id="footer-location" class="footer-location">
+            <h3><a href="https://goo.gl/maps/3gMak">Ecojava Cafe Location</a></h3>
             <p>
-                &#64; 2014 Ecojava Cafe Limited. All Rights Reserved.
+                1011 Hamilton Street<br />
+                Vancouver, BC  V6B 5T4 <br />
+                Canada
             </p>
-        </div><!--.copyright-->
-    </footer>
+        </div><!--footer-location-->
+    </nav><!--footer-nav-->
+
+    <div id="copyright" class="copyright">
+        <p>
+            &#64; 2014 Ecojava Cafe Limited. All Rights Reserved.
+        </p>
+    </div><!--.copyright-->
+</footer>
+<p class="citation">
+    This page may include copyrighted pictures or texts from Pinterest, Allrecipes, Starbucks, googled images and texts.
+</p>
 </body>
 </html>
