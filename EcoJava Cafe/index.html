@@ -42,7 +42,13 @@
             <nav id="main-nav" class="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="menupage.html">Menu</a></li>
+                    <li><a href="menupage.html">Menu</a><ul>
+                        <li><a href="beverages.html">Beverages</a></li>
+                        <li><a href="bakedgoods.html">Baked Goods</a></li>
+                        <li><a href="sandwich.html">Sandwiches</a></li>
+                        <li><a href="dessert.html">Desserts</a></li>
+                        <li><a href="coffeebeans.html">Coffee Beans</a></li>
+                    </ul></li>
                     <li><a href="responsibility.html">Responsibility</a></li>
                     <li><a href="aboutus.html">About us</a></li>
                     <li><a href="contactus.html">Contact us</a></li>
@@ -170,11 +176,13 @@
                 </p>
             </div><!--.copyright-->
             <form id="switchform"> <p><strong>Please choose a stylesheet:</strong>
-                <input type="radio" name="choice" value="none" onClick="chooseStyle(this.value, 60)">Default style,
-                <input type="radio" name="choice" value="Jesse" onClick="chooseStyle(this.value, 60)">Jesse,
-                <input type="radio" name="choice" value="Keith" onClick="chooseStyle(this.value, 60)">Keith,
-                <input type="radio" name="choice" value="Anabell" onClick="chooseStyle(this.value, 60)">Anabell,
-                <input type="radio" name="choice" value="Dana" onClick="chooseStyle(this.value, 60)">Dana.
+			<ul>
+                <li><input type="radio" name="choice" value="none" onClick="chooseStyle(this.value, 60)">Default style</li>
+                <li><input type="radio" name="choice" value="Jesse" onClick="chooseStyle(this.value, 60)">Jesse</li>
+                <li><input type="radio" name="choice" value="Keith" onClick="chooseStyle(this.value, 60)">Keith</li>
+                <li><input type="radio" name="choice" value="Anabell" onClick="chooseStyle(this.value, 60)">Anabell</li>
+                <li><input type="radio" name="choice" value="Dana" onClick="chooseStyle(this.value, 60)">Dana</li>
+				</ul>
             </form></p>
         </footer>
     </body>
