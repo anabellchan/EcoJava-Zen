@@ -9,10 +9,28 @@
     <!--[if lt IE 9]>
     <script type="text/javascript" src="js/html5shiv.js"></script>
     <![endif]-->
-    <link href="" rel="stylesheet" />
-
+    <!-- Our CSS style sheets -->
+    <link rel="stylesheet" type="text/css" href="default.css" />
+    <link rel="alternate stylesheet" type="text/css" media="screen" title="Jesse" href="jesse.css" />
+    <link rel="alternate stylesheet" type="text/css" media="screen" title="Keith" href="keith.css" />
+    <link rel="alternate stylesheet" type="text/css" media="screen" title="Anabell" href="anabell.css" />
+    <link rel="alternate stylesheet" type="text/css" media="screen" title="Dana" href="dana.css" />
+    <!--This script should appear below your LINK stylesheet tags -->
+    <script src="js/styleswitch.js" type="text/javascript">
+        /***********************************************
+         * Style Sheet Switcher v1.1- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+         * This notice MUST stay intact for legal use
+         * Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+         ***********************************************/
+    </script>
+    <script type="text/javascript">
+        window.onload=function(){
+            var formref=document.getElementById("switchform")
+            indicateSelected(formref.choice)
+        }
+    </script>
 </head>
-<body>
+
 <body class="beverages">
 <header>
     <div id="ecojavalogo" class="ecojavalogo">
@@ -77,7 +95,7 @@
 </div> <!-- title -->
 
 <form action="Order_Sent.html" method="post" enctype="multipart/form-data" >
-    <ol class="menu">
+    <ul class="menu">
         <li>
             <div id="americano" class="item">
                 <dl>
@@ -265,7 +283,7 @@
                 <hr />
             </div> <!-- #item.mocha -->
         </li>
-    </ol>
+    </ul>
     <input type="submit" name="submit" value="Submit Order!"/>
 </form>
 </main>
@@ -328,6 +346,13 @@
             &#64; 2014 Ecojava Cafe Limited. All Rights Reserved.
         </p>
     </div><!--.copyright-->
+    <form id="switchform"> <p><strong>Please choose a stylesheet:</strong>
+        <input type="radio" name="choice" value="none" onClick="chooseStyle(this.value, 60)">Default style,
+        <input type="radio" name="choice" value="Jesse" onClick="chooseStyle(this.value, 60)">Jesse,
+        <input type="radio" name="choice" value="Keith" onClick="chooseStyle(this.value, 60)">Keith,
+        <input type="radio" name="choice" value="Anabell" onClick="chooseStyle(this.value, 60)">Anabell,
+        <input type="radio" name="choice" value="Dana" onClick="chooseStyle(this.value, 60)">Dana.
+    </form>
 </footer>
 <p class="citation">
     This page may include copyrighted pictures or texts from Pinterest, Allrecipes, Starbucks, googled images and texts.
