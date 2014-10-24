@@ -1,5 +1,581 @@
-body {
-
-    /* I put in a background color as a test of the CSS file. Please copy your CSS to here and erase this  background colour.   -- Keith. */
-    background-color: lightblue;
+/*index page*/
+.section_philo {
+    background-color: #bedfb9;
+    padding: 2em;
+    margin: 2em 2em;
+    border: 1px solid green;
+    border-radius: 30px;
 }
+.section_ecofeed {
+    margin: 2em;
+}
+dl {
+    text-align: center;
+}
+.section_ecofeed h2,
+.section_recommend dt,
+.section_stayupdated,
+input[type=submit] {
+    display: none;
+}
+.section_recommend dd {
+    margin: 0;
+    padding: 2em;
+}
+.section_recommend img {
+    border: 1px solid black;
+    border-color: green;
+    border-radius: 500px;
+}
+.section_ecofeed {
+    background-color: lightgoldenrodyellow;
+    border-radius: 30px;
+    color: green;
+}
+/*menu page*/
+body {
+    margin: 0;
+    background-color: white;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+/*header container*/
+header {
+    width: 100%;
+    padding-top: 5em;
+    padding-bottom: 20px;
+    /*margin: 0 auto;*/
+    /*margin-bottom: 50px;*/
+    text-align: center;
+    background-image: url(images/anabell/coffeebeans.jpg);
+    background-color: #9C825F;  /* fallback*/
+}
+/*logo*/
+.ecojavalogo {
+    position: relative;
+    float: left;
+    left: 0;
+}
+.ecojavalogo img
+{
+    width: 0;
+    height: 200px;
+}
+/*navigation on top*/
+.main-nav ul {
+    list-style: none;
+    display: inline-table;
+    padding: 0;
+    margin: 0 auto;
+    /*text-align: center;*/
+    border-radius: 10px;
+    position: relative;
+    background-color: rgba(255,255,255,.8);
+}
+
+.main-nav ul:first-child {
+    padding-left: 3em;
+}
+.main-nav ul:last-child {
+     padding-right: 3em;
+ }
+
+.main-nav ul li {
+    float: left;
+    position: relative;
+    display: inline;
+    left: auto;
+    right: auto;
+}
+
+.main-nav a {
+    color: #3f3b36;
+    font-size: large;
+    text-decoration: none;
+    letter-spacing: .1em;
+    display: block;
+    padding: .5em 1em;
+    color: black;
+}
+.main-nav ul ul{
+    position: absolute;
+    display: none;
+    padding: 0 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 5px 5px 4px 0px rgba(0,0,0,.5);
+}
+.main-nav ul ul li {
+    float: none;
+    position: relative;
+}
+.main-nav ul ul a {
+    padding: 3px 20px;
+    color: #000;
+}
+.main-nav ul li:hover,
+.main-nav ul ul a:hover {
+    transition-duration: 0.3s;
+    transition-property: box-shadow;
+    box-shadow: 0 0 20px rgba(100, 36, 29, 0.60);
+    background-color: white;
+}
+
+.main-nav ul li:hover ul {
+    color: #000;
+    display: block;
+    background-color: white;
+    padding-right: 0;
+    border: 1px solid rgba(231, 231, 231, 0.93);
+}
+.main-nav ul ul a:active {
+    border: 1px solid rgba(231, 231, 231, 0.93);
+    background-color: #ccc;
+}
+.social-links {
+    /*right: 22.5%;*/
+    /*top: 0;*/
+    float: right;
+    width: 9%;
+    display: block;
+    text-align: center;
+}
+.social-links ul
+{
+    list-style-type: none;
+    padding-top: 1em;
+}
+/*Body Section*/
+h1,
+h2,
+h3 {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px #999;
+    margin: 10px;
+    margin-bottom: 0;
+    line-height: 4em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: black;
+}
+
+main {
+    float: left;
+    width: 75%;
+    margin: 5%;
+    margin-left: 10%;
+    box-shadow: 0 20px 50px rgba(255, 255, 255, 0.60);
+    /*margin: 0, auto;*/
+    -webkit-box-shadow: 0px 0px 121px 9px rgba(179,154,104,1);
+    -moz-box-shadow: 0px 0px 121px 9px rgba(179,154,104,1);
+    box-shadow: 0px 0px 121px 9px rgba(179,154,104,1);
+    background-color: whitesmoke;
+    border: white solid 1px;
+    border-radius: 20px;
+}
+iframe {
+    float: left;
+    margin: 2em;
+    width: 300px;
+    height: 315px;
+    padding: 2em;
+    border: 1px solid grey;
+
+}
+.menu-items {
+    margin: 10px;
+    padding-right: 10px;
+}
+
+.menu-items dt {
+    padding: 1em 2em;
+    text-transform: uppercase;
+}
+.menu-items a {
+text-decoration: none;
+}
+.menu-items a:link {
+    color: green;
+}
+.menu-items a:visited {
+    color:#003300;
+}
+.menu-items a:hover,
+.menu-items a:focus {
+    color: grey;
+}
+.menu-items a:active {
+    color: black;
+}
+.menu-items dd {
+    padding: 2em;
+    padding-left: 0;
+    color: #333;
+}
+
+
+.menu-items dd:first-letter{
+    font-size: 1.25em;
+    text-shadow: 1px 1px 0px #999;
+}
+.menu-item dl:first-child dd {
+    margin-left: 100em;
+}
+
+.back-to-top {
+    text-align: center;
+    padding: 3em;
+    font-size:15px;
+    color: #333;
+}
+.back-to-top a {
+    color: green;
+}
+.back-to-top a:visited {
+    color: #003300;
+}
+.back-to-top a:hover,
+.back-to-top a:focus {
+    color: grey;
+}
+.back-to-top a:active {
+    color: black;
+}
+.citation,
+#side-nav-title,
+.intro-title,
+.comment,
+.contactus hr {
+
+     display: none;
+ }
+
+/*beverage page*/
+#beverages_title hr {
+    display: none;
+}
+.beverage_form {
+    text-align: center;
+}
+/*dessert page*/
+.side-nav-content ul {
+    float: left;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    background-color:white ;
+
+}
+.side-nav-content li {
+    float: left;
+    margin: 1em;
+    padding: .5em 1em;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+.side-nav-content a {
+    text-decoration: none;
+    color: darkslategray;
+}
+.menu {
+    padding: 0;
+    margin: 0;
+}
+.menu li {
+    list-style-type: none;
+}
+.menu dt {
+    text-align: center;
+}
+
+.menu dd,
+.section_recommend {
+    display: block;
+    margin: 0 auto;
+}
+/*order sent page*/
+.order-sent {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 2em auto;
+    margin-top: 0;
+    padding: 2em;
+}
+.msg-order-sent {
+    font: 1.25em 'Lato', Arial, Helvetica, sans-serif;
+}
+/*About Us page*/
+section p {
+    padding-left: 4em;
+    padding-right: 4em;
+}
+section p:first-letter {
+    font-size: 2em;
+}
+.fair_economy h2 {
+    margin-left: 4em;
+    font-size: 1em;
+    color: green;
+}
+
+/*Contact Us page*/
+main#main.Contact.Us h4 {
+    width: 80%;
+    margin: 2em auto;
+}
+fieldset {
+    /*float: left;*/
+    width: 80%;
+    border: 2px dotted #333;
+    margin-left: 2em;
+    padding: 1em 2em;
+}
+form label {
+    display: block;
+    width: 40%;
+    float: left;
+}
+form input,
+form textarea {
+display: block;
+    width: 50%;
+    float: right;
+}
+input[type=submit] {
+    float: left;
+    padding: .5em 1em;
+    width: 10em;
+    margin: 3em 0 .5em 0;
+    -webkit-transition: background-color .3s ease;
+    -moz-transition: background-color .3s ease;
+    -ms-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+    transition: background-color .3s ease;
+}
+input[type=submit]:hover,
+input[type=submit]:focus {
+    background-color: #e2e2e2;
+}
+input[type=submit]:active {
+    background-color: #ccc;
+}
+.cafe-location,
+.cafe-hours,
+.google-map,
+.cafe-hours h3 {
+    display: none;
+
+}
+.cafe-location h4,
+.cafe-hours {
+    float: right;
+    width: 30%
+}
+
+.cafe-location h4,
+.employment {
+    clear: both;
+}
+#employment h3,
+#employment h4 {
+    width: 80%;
+    margin: 2em auto;
+}
+#employment.employment h3 {
+    margin-top: 3em;
+}
+table {
+    width: 80%;
+    margin: 2em auto;
+    box-shadow: 5px 5px 2px #888;
+    border:1px solid #000;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.table1 caption {
+    text-align: left;
+    padding: 2em 0;
+    margin: 0;
+    font-weight: 700;
+}
+table tr:nth-child(odd){
+    background-color:#e5e5e5;
+}
+table tr:nth-child(even){
+    background-color:#fff;
+}
+table td{
+
+    border:1px solid #000;
+    border-width:0 1px 1px 0;
+    text-align:left;
+    padding:7px;
+}
+
+table tr:last-child td {
+     border-width:0 1px 0 0;
+}
+
+table tr td:last-child{
+      border-width:0 0 1px 0;
+}
+
+table tr:last-child td:last-child{
+      border-width:0;
+}
+
+table thead tr th {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ccc), color-stop(1, #b2b2b2) );
+    background:-moz-linear-gradient( center top, #ccc 5%, #b2b2b2 100% );
+    background:-o-linear-gradient(bottom, #ccc 5%, #b2b2b2 100%);
+    background: -o-linear-gradient(top,#ccc,b2b2b2);
+    background-color:#ccc;
+    /*border:0 solid #000;*/
+    text-align:center;
+    border-width:0 1px;
+    border-bottom: 1px solid 0;
+    font-size:14px;
+    font-weight:bold;
+    color:#000;
+}
+table tr:first-child td:first-child{
+    border-width:0 0 1px 0;
+}
+table tr:first-child td:last-child{
+    border-width:0 0 1px 1px;
+    vertical-align:middle;
+}
+.submit {
+    float: left;
+    margin: 3em 0 0.5em -3px;
+    padding: .5em 2em;
+    width: 10em;
+    background: white;
+    border: 20px;
+}
+
+/****************/
+/*Footer Section*/
+/****************/
+
+footer {
+    clear: both;
+    float: left;
+    width: 100%;
+    margin: 0;
+    background-color: green;
+    overflow: hidden;
+}
+
+/*certificates*/
+aside {
+    width: 5%;
+    float: right;
+    margin: 1em;
+}
+
+aside img{
+    float: right;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+}
+.fairtrade_cert,
+.organic_cert,
+.b_corp_cert,
+.climatesmart_cert,
+.kosher_cert {
+    text-align: center;
+}
+
+/*cafe menu*/
+
+.footer-menu {
+    float: left;
+    padding-left: 8em;
+    padding-right: 8em;;
+}
+.footer-menu a {
+    float: left;
+    margin-left: 0;
+}
+
+.footer-menu a,
+.footer-location p,
+.footer-moreinfo ul a {
+    font-size: smaller;
+}
+
+.footer-nav h3,
+.footer-menu h3,
+.footer-moreinfo h3 {
+    float: left;
+    font-size: medium;
+    color: white;
+}
+
+.footer-nav ul,
+.footer-menu ul {
+    padding-left: 0;
+}
+
+.footer-nav a:link
+.footer-nav a:visited {
+    color: white
+}
+.footer-nav a:hover,
+.footer-nav a:focus {
+    color: silver;
+}
+.footer-nav a:active {
+    color: grey;
+}
+
+
+.footer-moreinfo {
+    float: left;
+}
+.footer-location {
+    float: left;
+    padding-left: 5em;
+}
+.footer-location h3 {
+    padding-left: 0;
+}
+
+.footer-nav li{
+    list-style-type: none;
+}
+.footer-nav a {
+    text-decoration: none;
+    color: white;
+}
+.footer-nav p {
+    color: white;
+}
+.certification-bar h3,
+.email p {
+    display: none;
+}
+.copyright {
+    clear: both;
+    font: normal .8em 'Lato', Arial, Helvetica, sans-serif;
+    color: #f8f8f8;
+    text-align: center;
+}
+#switchform {
+    display: none;
+}
+
