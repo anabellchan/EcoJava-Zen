@@ -1,67 +1,4 @@
-/*index page*/
-.section_philo {
-    background-color: #bedfb9;
-    padding: 2em;
-    margin: 2em 2em;
-    border: 1px solid green;
-    border-radius: 30px;
-}
-.section_ecofeed {
-    margin: 2em;
-}
-dl {
-    text-align: center;
-}
-.section_ecofeed h2,
-.section_recommend dt,
-.section_stayupdated,
-input[type=submit] {
-    display: none;
-}
-.section_recommend dd {
-    margin: 0;
-    padding: 2em;
-}
-.section_recommend img {
-    border: 1px solid black;
-    border-color: green;
-    border-radius: 500px;
-}
-.section_ecofeed {
-    background-color: lightgoldenrodyellow;
-    border-radius: 30px;
-    color: green;
-}
-/*menu page*/
-body {
-    margin: 0;
-    background-color: white;
-    font-family: 'Lato', Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-}
-
-/*header container*/
-header {
-    width: 100%;
-    padding-top: 5em;
-    padding-bottom: 20px;
-    /*margin: 0 auto;*/
-    /*margin-bottom: 50px;*/
-    text-align: center;
-    background-image: url(images/anabell/coffeebeans.jpg);
-    background-color: #9C825F;  /* fallback*/
-}
-/*logo*/
-.ecojavalogo {
-    position: relative;
-    float: left;
-    left: 0;
-}
-.ecojavalogo img
-{
-    width: 0;
-    height: 200px;
-}
+/*happening on all pages*/
 /*navigation on top*/
 .main-nav ul {
     list-style: none;
@@ -78,8 +15,8 @@ header {
     padding-left: 3em;
 }
 .main-nav ul:last-child {
-     padding-right: 3em;
- }
+    padding-right: 3em;
+}
 
 .main-nav ul li {
     float: left;
@@ -183,14 +120,50 @@ main {
     border: white solid 1px;
     border-radius: 20px;
 }
-iframe {
-    float: left;
-    margin: 2em;
-    width: 300px;
-    height: 315px;
-    padding: 2em;
-    border: 1px solid grey;
+body {
+    margin: 0;
+    background-color: white;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
 
+/*header container*/
+header {
+    width: 100%;
+    padding-top: 5em;
+    padding-bottom: 20px;
+    text-align: center;
+    background-image: url(images/anabell/coffeebeans.jpg);
+    background-color: #9C825F;  /* fallback*/
+}
+/*logo*/
+.ecojavalogo {
+    position: relative;
+    float: left;
+    left: 0;
+}
+.ecojavalogo img
+{
+    width: 0;
+    height: 200px;
+}
+.side-nav-content ul {
+    float: left;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    background-color:white ;
+}
+.side-nav-content li {
+    float: left;
+    margin: 1em;
+    padding: .5em 1em;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+.side-nav-content a {
+    text-decoration: none;
+    color: darkslategray;
 }
 .menu-items {
     margin: 10px;
@@ -202,7 +175,7 @@ iframe {
     text-transform: uppercase;
 }
 .menu-items a {
-text-decoration: none;
+    text-decoration: none;
 }
 .menu-items a:link {
     color: green;
@@ -221,6 +194,7 @@ text-decoration: none;
     padding: 2em;
     padding-left: 0;
     color: #333;
+    text-align: left;
 }
 
 
@@ -251,42 +225,99 @@ text-decoration: none;
 .back-to-top a:active {
     color: black;
 }
+
+/*index page*/
+.section_philo {
+    background-color: #bedfb9;
+    padding: 2em;
+    margin: 2em 2em;
+    border: 1px solid green;
+    border-radius: 30px;
+}
+.section_ecofeed {
+    margin: 2em;
+}
+dl {
+    text-align: center;
+}
+.section_ecofeed h2,
+.section_recommend dt,
+.section_stayupdated,
+input[type=submit] {
+    display: none;
+}
+.section_recommend dd {
+    margin: 0;
+    padding: 2em;
+}
+.section_recommend img,
+.menu img,
+.section_beans img {
+    border: 1px solid black;
+    border-color: green;
+    border-radius: 500px;
+}
+.section_ecofeed {
+    background-color: lightgoldenrodyellow;
+    border-radius: 30px;
+    color: green;
+}
+/*Responsibilities page*/
+.responsibility-desc {
+    width: 40%;
+    margin: 0 auto;
+    border: 1px solid green;
+}
+.responsibility-desc p {
+    text-align: left;
+    padding: 0 1em;
+    font-size: .75em;
+}
+.responsibility-desc a:link {
+    color: black;
+}
+.responsibility-desc ul {
+    list-style-type: none;
+    padding: 0;
+}
+.responsibility-desc li {
+    color: green;
+}
+.responsibility-desc p:first-letter {
+    font-size: 1em;
+}
+#id,
+#community,
+#ethical-sourcing,
+#environment {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: green;
+}
+
+/*menu page*/
+iframe {
+    float: left;
+    margin: 2em;
+    width: 300px;
+    height: 315px;
+    padding: 2em;
+    border: 1px solid grey;
+
+}
 .citation,
 #side-nav-title,
 .intro-title,
 .comment,
-.contactus hr {
+hr {
 
      display: none;
  }
-
 /*beverage page*/
-#beverages_title hr {
-    display: none;
-}
 .beverage_form {
     text-align: center;
 }
 /*dessert page*/
-.side-nav-content ul {
-    float: left;
-    list-style-type: none;
-    width: 100%;
-    padding: 0;
-    background-color:white ;
-
-}
-.side-nav-content li {
-    float: left;
-    margin: 1em;
-    padding: .5em 1em;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-}
-.side-nav-content a {
-    text-decoration: none;
-    color: darkslategray;
-}
 .menu {
     padding: 0;
     margin: 0;
@@ -531,15 +562,18 @@ aside img{
     padding-left: 0;
 }
 
-.footer-nav a:link
+.footer-nav a:link,
 .footer-nav a:visited {
     color: white
 }
 .footer-nav a:hover,
-.footer-nav a:focus {
+.footer-nav a:focus,
+.responsibility-desc a:hover,
+.responsibility-desc a:focus {
     color: silver;
 }
-.footer-nav a:active {
+.footer-nav a:active,
+.responsibility-desc a:active {
     color: grey;
 }
 
@@ -576,6 +610,11 @@ aside img{
     text-align: center;
 }
 #switchform {
-    display: none;
+    width: 100%;
+}
+#switchform input {
+    display: inline-block;
+    width: auto;
+    float: none;
 }
 
